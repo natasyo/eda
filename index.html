@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/page.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 col-md-6 col-lg-5 pr-lg-0  d-flex align-items-center">
+                    <a href="#" class="header__search d-md-none">
+                        <img src="images/search.svg" alt="поиск">
+                    </a>
+                    <nav class="main-menu d-none d-md-flex">
+                        <a href="#">О нас</a>
+                        <a href="#">Меню</a>
+                        <a href="#">Доставка и оплата</a>
+                        <a href="#">Контакты</a>
+                    </nav>
+                </div>
+                <div class="col-8 col-md-2 col-lg-2">
+                    <a href="/" class="header__logo logo d-block text-center"><img src="images/logo.svg" alt="Еда без забот"></a>
+                </div>
+                <div class="col-2 col-md-4 justify-content-end flex-wrap col-lg-5 d-flex align-items-center justify-content-lg-between  justify-content-xl-end">
+                    <a href="#" class="header__search d-none d-md-inline">
+                        <img src="images/search.svg" alt="поиск">
+                    </a>
+                    <a href="#" class="header__account account">
+                        <img src="images/user.svg" alt="user"><span class="d-none d-md-inline">Личный кабинет</span>
+                    </a>
+                    <a href="#" class="basket header__basket d-none d-md-inline">
+                        <img src="images/bag.svg" alt="Корзина">
+                    </a>
+                    <a href="tel:74957976457" class="header__phone phone d-none d-md-inline">+7 (495) <span
+                            class="phone_bold">797–64–57</span></a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="container">
+            <p class="h1 banner__header">Ваш персональный шеф-повар</p>
+            <p class="banner__text text-center">Вкусные блюда из свежих продуктов с бесплатной доставкой</p>
+            <button class="btn btn-info banner__btn">Узнать подробнее</button>
+        </div>
+    </div>
+    <div class="discounts">
+        <div class="container">
+            <div class="row discounts__row">
+                <div class="col col-md-6">
+                    <div class="discount__item discount__item_left">
+                        <p class="discount__header">Начисление бонусов<br> за каждый заказ</p>
+                        <a href="#" class="discount__link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col col-md-6">
+                    <div class="discount__item discount__item_right">
+                        <p class="discount__header">Скидка 20% при заказе<br> еды на всю неделю</p>
+                        <a href="#" class="discount__link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-rest">
+        <div class="container">
+            <p class="h2 menu-rest__header text-center">Меню</p>
+            <p class="menu-rest__work text-center">Готовые обеды доступны с 12:00 до 15:00 по Москве.</p>
+        </div>
+        <div class="menu-rest__tabs">
+            <div class="container">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="dinner" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Завтраки и перекусы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="salat" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Салаты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="soup" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Супы</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="dinner">
+                    <div class="menu-rest__products">
+                        <div class="menu-rest__product menu-rest__product_new">
+                            <img src="images/product1.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед «Офисный планктон»
+                            </p>
+                            <p class="menu-rest__product-weight">650 г</p>
+                            <p class="menu-rest__product-composition">Борщ украинский, салат оливье, пирожки с капустой, горячий чай …</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">350 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product2.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Сытный обед на 2 персоны
+                            </p>
+                            <p class="menu-rest__product-weight">700 г</p>
+                            <p class="menu-rest__product-composition">Картофель по-деревенски, говядина, салат, бутылка белого вина</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">170 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product3.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед «Идеальная фигура»
+                            </p>
+                            <p class="menu-rest__product-weight">700 г</p>
+                            <p class="menu-rest__product-composition">Вареный рис, зелень, королевские креветки</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">1 200 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product4.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед по-деревенски
+                            </p>
+                            <p class="menu-rest__product-weight">1000 г</p>
+                            <p class="menu-rest__product-composition">Вареный картофель со специями, спаржа, фасоль стручкова, морковь вареная, …</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">340 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product1.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед «Офисный планктон»
+                            </p>
+                            <p class="menu-rest__product-weight">650 г</p>
+                            <p class="menu-rest__product-composition">Борщ украинский, салат оливье, пирожки с капустой, горячий чай …</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">350 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product2.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Сытный обед на 2 персоны
+                            </p>
+                            <p class="menu-rest__product-weight">700 г</p>
+                            <p class="menu-rest__product-composition">Картофель по-деревенски, говядина, салат, бутылка белого вина</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">170 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product3.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед «Идеальная фигура»
+                            </p>
+                            <p class="menu-rest__product-weight">700 г</p>
+                            <p class="menu-rest__product-composition">Вареный рис, зелень, королевские креветки</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">1 200 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product4.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед по-деревенски
+                            </p>
+                            <p class="menu-rest__product-weight">1000 г</p>
+                            <p class="menu-rest__product-composition">Вареный картофель со специями, спаржа, фасоль стручкова, морковь вареная, …</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">340 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="salat">
+                    <div class="menu-rest__products">
+                        <div class="menu-rest__product">
+                            <img src="images/product1.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед «Офисный планктон»
+                            </p>
+                            <p class="menu-rest__product-weight">650 г</p>
+                            <p class="menu-rest__product-composition">Борщ украинский, салат оливье, пирожки с капустой, горячий чай …</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">350 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product2.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Сытный обед на 2 персоны
+                            </p>
+                            <p class="menu-rest__product-weight">700 г</p>
+                            <p class="menu-rest__product-composition">Картофель по-деревенски, говядина, салат, бутылка белого вина</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">170 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product3.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед «Идеальная фигура»
+                            </p>
+                            <p class="menu-rest__product-weight">700 г</p>
+                            <p class="menu-rest__product-composition">Вареный рис, зелень, королевские креветки</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">1 200 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product4.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед по-деревенски
+                            </p>
+                            <p class="menu-rest__product-weight">1000 г</p>
+                            <p class="menu-rest__product-composition">Вареный картофель со специями, спаржа, фасоль стручкова, морковь вареная, …</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">340 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product1.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед «Офисный планктон»
+                            </p>
+                            <p class="menu-rest__product-weight">650 г</p>
+                            <p class="menu-rest__product-composition">Борщ украинский, салат оливье, пирожки с капустой, горячий чай …</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">350 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product2.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Сытный обед на 2 персоны
+                            </p>
+                            <p class="menu-rest__product-weight">700 г</p>
+                            <p class="menu-rest__product-composition">Картофель по-деревенски, говядина, салат, бутылка белого вина</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">170 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product3.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед «Идеальная фигура»
+                            </p>
+                            <p class="menu-rest__product-weight">700 г</p>
+                            <p class="menu-rest__product-composition">Вареный рис, зелень, королевские креветки</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">1 200 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product4.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед по-деревенски
+                            </p>
+                            <p class="menu-rest__product-weight">1000 г</p>
+                            <p class="menu-rest__product-composition">Вареный картофель со специями, спаржа, фасоль стручкова, морковь вареная, …</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">340 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="soup">
+                    <div class="menu-rest__products">
+                        <div class="menu-rest__product">
+                            <img src="images/product1.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед «Офисный планктон»
+                            </p>
+                            <p class="menu-rest__product-weight">650 г</p>
+                            <p class="menu-rest__product-composition">Борщ украинский, салат оливье, пирожки с капустой, горячий чай …</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">350 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product2.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Сытный обед на 2 персоны
+                            </p>
+                            <p class="menu-rest__product-weight">700 г</p>
+                            <p class="menu-rest__product-composition">Картофель по-деревенски, говядина, салат, бутылка белого вина</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">170 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product3.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед «Идеальная фигура»
+                            </p>
+                            <p class="menu-rest__product-weight">700 г</p>
+                            <p class="menu-rest__product-composition">Вареный рис, зелень, королевские креветки</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">1 200 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product4.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед по-деревенски
+                            </p>
+                            <p class="menu-rest__product-weight">1000 г</p>
+                            <p class="menu-rest__product-composition">Вареный картофель со специями, спаржа, фасоль стручкова, морковь вареная, …</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">340 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product1.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед «Офисный планктон»
+                            </p>
+                            <p class="menu-rest__product-weight">650 г</p>
+                            <p class="menu-rest__product-composition">Борщ украинский, салат оливье, пирожки с капустой, горячий чай …</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">350 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product2.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Сытный обед на 2 персоны
+                            </p>
+                            <p class="menu-rest__product-weight">700 г</p>
+                            <p class="menu-rest__product-composition">Картофель по-деревенски, говядина, салат, бутылка белого вина</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">170 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product3.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед «Идеальная фигура»
+                            </p>
+                            <p class="menu-rest__product-weight">700 г</p>
+                            <p class="menu-rest__product-composition">Вареный рис, зелень, королевские креветки</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">1 200 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                        <div class="menu-rest__product">
+                            <img src="images/product4.jpg" alt="">
+                            <p class="menu-rest__product-name">
+                                Обед по-деревенски
+                            </p>
+                            <p class="menu-rest__product-weight">1000 г</p>
+                            <p class="menu-rest__product-composition">Вареный картофель со специями, спаржа, фасоль стручкова, морковь вареная, …</p>
+                            <div class="menu-rest__bottom d-flex justify-content-between align-items-center">
+                                <p class="menu-rest__product-cost">340 ₽</p>
+                                <button class="menu-rest__in-basket"><img src="images/bag-white.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-rest__btn text-center">
+                <a href="#" class="btn btn-info menu-rest__all">Посмотреть все<span class="d-none d-sm-inline"> готовые
+                        обеды</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="discount-banner">
+        <div class="container">
+            <div class="discount-banner__content">
+                <p class="discount-banner__lbl">Акция</p>
+                <p class="discount-banner__name">Стейк рибай</p>
+                <p class="discount-banner__desc">Нежный, богатый, сочный вкус классического стейка, приготовленного на открытом огне</p>
+                <div class="discount-banner__bottom d-flex align-items-start align-items-sm-center flex-column flex-sm-row">
+                    <div class="discount-banner__bottom-left">
+                        <p class="discount-banner__cost">490 ₽</p>
+                        <p class="discount-banner__weight">200 г</p>
+                    </div>
+                    <a href="#" class="btn btn-info">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="causes">
+        <div class="container">
+            <div class="row">
+                <div class=" col-12 ">
+                    <p class="h2 causes__header ">Почему это удобно и выгодно</p>
+                </div>
+            </div>
+            <div class="row causes__row ">
+                <div class="col-md-4 col-lg-4 causes__item-col ">
+                    <div class="causes__item ">
+                        <img src="images/wallet.png " alt=" ">
+                        <p class="causes__name ">Экономия бюджета</p>
+                        <p class="causes__desc ">Мы покупаем продукты по оптовым ценам и готовим на автоматизированном производстве.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 causes__item-col ">
+                    <div class="causes__item ">
+                        <img src="images/quality.png " alt=" ">
+                        <p class="causes__name ">Необычайно вкусно</p>
+                        <p class="causes__desc ">Известные шеф-повара каждый день готовят вкусные блюда по технологии TotalFresh.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 causes__item-col ">
+                    <div class="causes__item ">
+                        <img src="images/fruits-and-vegetables.png " alt=" ">
+                        <p class="causes__name ">Свежие продукты</p>
+                        <p class="causes__desc ">Мы каждый день покупаем только свежие продукты у проверенных поставщиков.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 causes__item-col ">
+                    <div class="causes__item ">
+                        <img src="images/menu-copy.png " alt=" ">
+                        <p class="causes__name ">Разнообразное меню</p>
+                        <p class="causes__desc ">Каждую неделю мы добавляем в меню новые блюда. При этом всегда в наличии основные блюда, которые заказывают постоянно.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 causes__item-col ">
+                    <div class="causes__item ">
+                        <img src="images/clock.png " alt=" ">
+                        <p class="causes__name ">Экономия времени</p>
+                        <p class="causes__desc ">Не нужно тратить время на походы в магазин, готовку и мытье посуды. Мы сделаем все за Вас.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 causes__item-col ">
+                    <div class="causes__item ">
+                        <img src="images/food-and-restaurant.png " alt=" ">
+                        <p class="causes__name ">Удобная доставка</p>
+                        <p class="causes__desc ">Мы бесплатно доставляем готовые блюда в любое место. Вы выбираете только удобную дату и время.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-2 ">
+                    <a href="/ " class="footer__logo ">
+                        <img src="images/logo-footer.png " alt=" "></a>
+                </div>
+                <div class="d-md-block col-md-3 col-lg-2 footer__nav ">
+                    <p class="footer__title ">Навигация</p>
+                    <nav class="footer__menu ">
+                        <a href="# ">О нас</a>
+                        <a href="# ">Меню</a>
+                        <a href="# ">Доставка и оплата</a>
+                        <a href="# ">Контакты</a>
+                        <a href="# ">Личный кабинет</a>
+                    </nav>
+                </div>
+                <div class="col-6 col-md-4 ">
+                    <p class="footer__title ">График работы</p>
+                    <p>Пн — Пт 9:00 — 20:00 <br>Сб и Вс 9:00 — 18:00</p>
+                </div>
+                <div class="col-6 col-md-3 col-lg-4 ">
+                    <p class="footer__title ">Контакты</p>
+                    <p class="FOOTER-CONTACT ">Служба поддержки <br>
+                        <a href="tel:74957976457 " class="footer__phone ">+7 495 797-64-57</a>
+                        <a href="mailto:info@salatoff.ru " class="footer__email ">info@salatoff.ru</a></p>
+                </div>
+                <div class="col-sm-6 offset-md-2 col-md-5 col-lg-4 offset-lg-4 ">
+                    <p class="footer__title footer__title_bottom ">Мобильное приложение</p>
+                    <div class="footer__app ">
+                        <a href="# "><img src="images/google-play.png " alt=" "></a>
+                        <a href="# "><img src="images/app-store.png " alt=" "></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 ">
+                    <p class="footer__title footer__title_bottom ">Социальные сети</p>
+                    <div class="footer__socials ">
+                        <a href="# "><img src="images/vk.png " alt=" "></a>
+                        <a href="# "><img src="images/instagram.png " alt=" "></a>
+                        <a href="# "><img src="images/ok.png " alt=" "></a>
+                        <a href="# "><img src="images/fb.png " alt=" "></a>
+                        <a href="# "><img src="images/telegram.png " alt=" "></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom-menu d-flex align-items-center d-md-none ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-12 d-flex justify-content-between ">
+                    <button class="bottom-menu__menu ">
+                        <img src="images/menu.png " alt=" ">
+                    </button>
+                    <a href="tel:74957976457 " class="phone bottom-menu__phone ">+7 (495) <span
+                            class="phone_bold ">797–64–57</span></a>
+                    <a href="# " class="basket ">
+                        <img src="images/bag.svg " alt="Корзина ">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/slick.min.js "></script>
+    <script src="js/page.js "></script>
+</body>
+
+</html>
